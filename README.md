@@ -1,16 +1,71 @@
-# React + Vite
+# Bazaar App 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, accessible online grocery store frontend built with React and Vite.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Premium UI:** Vibrant, modern design with smooth animations.
+*   **Accessibility First:**
+    *   **Bilingual Support:** Full English and Urdu (RTL) support.
+    *   **Text-to-Speech (TTS):** Reads page content aloud for visually impaired or illiterate users.
+    *   **Voice Search:** Search for products using voice commands.
+*   **E-commerce Functionality:**
+    *   Browse categories (Fresh Produce, Bakery, Dairy, Pantry).
+    *   Add to cart with toast confirmations.
+    *   Manage cart quantities and view total.
+    *   Checkout and Order Tracking simulation.
+*   **User Profile:** View personal details and membership status.
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Follow these instructions to set up and run the project locally.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **Node.js:** Ensure you have Node.js installed (v14 or higher recommended).
+*   **npm:** Usually comes with Node.js.
+
+### Installation
+
+1.  **Unzip the source code** (if you haven't already).
+2.  Open a terminal/command prompt in the project folder (`bazaar-app`).
+3.  Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Running the App
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+*   The app will usually start at `http://localhost:5173`.
+*   Open this URL in your browser to use the app.
+
+### Building for Production
+
+To create an optimized build for deployment:
+
+```bash
+npm run build
+```
+
+The output will be in the `dist` folder.
+
+## 📂 Project Structure
+
+*   `src/components`: Reusable UI components (Navbar, ProductCard, Toast, etc.).
+*   `src/context`: Global state management (CartContext, LanguageContext).
+*   `src/pages`: Individual page components (Home, ShopPage, CartPage, etc.).
+*   `src/App.jsx`: Main application entry point and routing.
+
+## 🛠️ Technologies
+
+*   [Vite](https://vitejs.dev/)
+*   [React](https://reactjs.org/)
+*   [React Router](https://reactrouter.com/)
+*   [Lucide React](https://lucide.dev/) (Icons)
